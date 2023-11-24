@@ -16,13 +16,13 @@ const Search = (props) => {
     });
 
     const getlocationlist = async () => {
-        let url = `http://localhost:3030/api/get-location-list`;
+        let url = `https://zomato-backend-u1he.onrender.com/api/get-location-list`;
         let response = await fetch(url, { method: 'GET' },);
         let data = await response.json()
         setlocation(data.result)
     }
     let getFiltterData = async () => {
-        let url = "http://localhost:3030/api/filterRestaurants";
+        let url = "https://zomato-backend-u1he.onrender.com/api/filterRestaurants";
         let { data } = await axios.post(url, { ...filterData });
         console.log(filterData);
 

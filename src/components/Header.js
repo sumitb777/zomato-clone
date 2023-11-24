@@ -25,7 +25,7 @@ const Header = (props) => {
     });
     const saveUser = async () => {
         try {
-            let url = `http://localhost:3030/api/create-user`;
+            let url = `https://zomato-backend-u1he.onrender.com/api/create-user`;
             let { data } = await axios.post(url, { ...newUser });
             // alert(data.massage);
             console.log(data.massage);
@@ -40,7 +40,7 @@ const Header = (props) => {
     }
     let userLogin = async () => {
         try {
-            let url = `http://localhost:3030/api/login`;
+            let url = `https://zomato-backend-u1he.onrender.com/api/login`;
             let { data } = await axios.post(url, { ...login });
             // alert(data.massage);
 

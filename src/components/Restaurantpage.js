@@ -15,14 +15,14 @@ const Restaurantpage = (props) => {
 
 
     const getrestaurantDeatils = async () => {
-        let url = `http://localhost:3030/api/getRestaurantsDetails-by-id/${id}`;
+        let url = `https://zomato-backend-u1he.onrender.com/api/getRestaurantsDetails-by-id/${id}`;
         let response = await fetch(url, { method: 'GET' })
         let data = await response.json();
         setrstoDetails(data.result);
 
     };
     const getMenu = async () => {
-        let url = `http://localhost:3030/api/get-menu-Items-ByRestaurant-id/${id}`;
+        let url = `https://zomato-backend-u1he.onrender.com/api/get-menu-Items-ByRestaurant-id/${id}`;
         let response = await fetch(url, { method: 'GET' })
         let data = await response.json();
         setmenuDetail(data.result);
@@ -46,7 +46,7 @@ const Restaurantpage = (props) => {
     };
 
     let makePayment = async () => {
-        let url = `http://localhost:3030/api/get-order-id`;
+        let url = `https://zomato-backend-u1he.onrender.com/api/get-order-id`;
         let { data } = await axios.post(url, { amount: totalPrice });
         let { order } = data;
 
@@ -69,7 +69,7 @@ const Restaurantpage = (props) => {
                         signature: response.razorpay_signature,
                         order: userOrders
                     };
-                    let url = 'http://localhost:3030/api/confirmPayment'
+                    let url = 'https://zomato-backend-u1he.onrender.com/api/confirmPayment'
                     let { data } = await axios.post(url, sendData)
                     if (data.status === true) {
                         alert("Payment done successfully, order saved");

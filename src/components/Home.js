@@ -14,7 +14,7 @@ const Home = (props) => {
     const getmealtype = async () => {
 
         try {
-            let url = `http://localhost:3030/api/get-meal-type`
+            let url = `https://zomato-backend-u1he.onrender.com/api/get-meal-type`
             let response = await fetch(url, { method: 'GET' },);
             let data = await response.json()
             setMealTypes(data.result)
@@ -28,7 +28,7 @@ const Home = (props) => {
         try {
             setRestarant([])
             setPlaceHolderText('Choose Locations')
-            let url = `http://localhost:3030/api/get-location-list`;
+            let url = `https://zomato-backend-u1he.onrender.com/api/get-location-list`;
             let response = await fetch(url, { method: 'GET' },);
             let data = await response.json()
             setlocation(data.result)
@@ -39,7 +39,7 @@ const Home = (props) => {
     }
     const restarurantByLocationid = async (id, name, city) => {
         try {
-            let url = `http://localhost:3030/api/get-Restaurants-locationid/${id}`;
+            let url = `https://zomato-backend-u1he.onrender.com/api/get-Restaurants-locationid/${id}`;
             let response = await fetch(url, { method: 'GET' },);
             let data = await response.json()
             if (data.result.length === 0) {
