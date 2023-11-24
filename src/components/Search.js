@@ -132,13 +132,13 @@ const Search = (props) => {
 
 
 
-            <section className="row d-flex justify-content-center gap-lg-4  gap-md-1 col-11 col-md-12  m-auto   ">
+            <section className="row d-flex justify-content-center gap-lg-4  gap-md-1 col-12  m-auto   ">
                 {/* <!--           fillter section               --> */}
 
                 <section className="col-lg-3   ">
                     {/* <!--                    collapse           --> */}
 
-                    <div className="col-sm-10 col-md-10  ">
+                    <div className="col-sm-10 col-11 ">
                         <p className="d-lg-none d-grid   justify-content-center my-2 ">
                             <button className="btn btn-primary  " data-bs-toggle="collapse" data-bs-target="#dcbs">Fillter &
                                 Sort</button>
@@ -282,9 +282,9 @@ const Search = (props) => {
                                     >
                                         <div className="info d-flex  gap-0 ps-0   pt-4 ps-sm-3 gap-sm-3  ">
                                             <img className="img-fluid " src={`/images/${value.image}`} alt="" />
-                                            <div className="mt-2 ">
-                                                <h3 className="fw-bold ">{value.name}</h3>
-                                                <p className="fw-medium ">Fort</p>
+                                            <div className="mt-2 ms-3  ">
+                                                <h3 className="fw-bold ms-1 mb-2 ">{value.name}</h3>
+
                                                 <p>{value.locality}, {value.city}</p>
                                             </div>
 
