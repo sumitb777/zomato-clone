@@ -213,6 +213,9 @@ const Restaurantpage = (props) => {
                             </div>
                         </div>
                     </div>
+
+
+
                     <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
                         tabindex="-1">
                         <div className="modal-dialog modal-dialog-centered">
@@ -226,12 +229,12 @@ const Restaurantpage = (props) => {
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlInput1" className="form-label">Name</label>
                                             <input type="email" className="form-control" id="examplehtmlFormControlInput1"
-                                                value={props.user.name} placeholder="Enter Name" />
+                                                placeholder="Enter Name" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlInput2" className="form-label">Email address</label>
                                             <input type="email" className="form-control" id="examplehtmlFormControlInput2"
-                                                value={props.user.email} placeholder="name@example.com" />
+                                                placeholder="name@example.com" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlTextarea1" className="form-label">Address</label>
@@ -255,6 +258,8 @@ const Restaurantpage = (props) => {
                             </div>
                         </div>
                     </div>
+
+
 
                     {/* modal htmlFor menu  End */}
 
