@@ -86,9 +86,9 @@ const Restaurantpage = (props) => {
 
             },
             prefill: {
-                name: "Gaurav Kumar",
-                email: "gaurav.kumar@example.com",
-                contact: "9000090000",
+                name: "sumit bidwe",
+                email: "sumitkumar@example.com",
+                contact: "8111111111",
             },
         };
         var rzp1 = new window.Razorpay(options);
@@ -103,6 +103,7 @@ const Restaurantpage = (props) => {
         });
         rzp1.open();
     };
+    console.log(props)
     useEffect(() => {
         getrestaurantDeatils();
     }, ([]))
@@ -225,16 +226,17 @@ const Restaurantpage = (props) => {
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlInput1" className="form-label">Name</label>
                                             <input type="email" className="form-control" id="examplehtmlFormControlInput1"
-                                                placeholder="Enter Name" />
+                                                value={props.user.name} placeholder="Enter Name" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlInput2" className="form-label">Email address</label>
                                             <input type="email" className="form-control" id="examplehtmlFormControlInput2"
-                                                placeholder="name@example.com" />
+                                                value={props.user.email} placeholder="name@example.com" />
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="examplehtmlFormControlTextarea1" className="form-label">Address</label>
-                                            <textarea className="form-control" id="examplehtmlFormControlTextarea1" rows="3"></textarea>
+                                            <textarea className="form-control"
+                                                id="examplehtmlFormControlTextarea1" rows="3"></textarea>
                                         </div>
 
 

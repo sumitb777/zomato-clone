@@ -229,20 +229,21 @@ const Header = (props) => {
                 </div>
             </div>
 
-            <section className="col-10 m-auto d-flex justify-content-between">
+            <section className="col-10 m-auto d-flex justify-content-between align-items-center ">
                 <section className=" bg-white rounded-circle logo-h d-flex justify-content-center align-items-center "
                     onClick={() => Navigate('/')}>
                     {props.logo === false ? <p></p> : <p className=" text-danger px-3 pt-2 h3 fw-bold  ">e!</p>}
                 </section>
-                {props.home === false ? <></> : <button className={`login fs-5  btn d-none d-sm-block text-white`}
+                {props.home === false ? <></> : <button className={`login fs-5 m-0  p-0 btn d-none d-sm-block text-white`}
                     onClick={() => Navigate('/')}>Home </button>}
                 {/* <button className={`login btn d-none d-sm-block text-white`} onClick={() => Navigate('/')}>Home </button> */}
                 <section className=" d-flex gap-2 ">
 
                     {props.user ? (
                         <>
-                            <p className=" fs-4 fw-medium  mt-3 text-white "> welcome {props.user.name}</p>
-                            <button className="login btn text-white fs-5" onClick={logoutuser} >Logout</button>
+                            <p className=" fs-4 fw-medium m-0  m-1  text-white "><img className="userlogo p-0  rounded-1"
+                                src='/images/assets/user.svg' alt="" /> {props.user.name}</p>
+                            <button className="login btn text-white border   h-50   fs-5" onClick={logoutuser} >Logout</button>
 
                         </>
                     ) :
