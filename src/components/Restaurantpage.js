@@ -65,7 +65,7 @@ const Restaurantpage = (props) => {
                     let userOrders = menuDetail.filter((menu) => menu.qty > 0);
                     let sendData = {
                         payment_id: response.razorpay_payment_id,
-                        order_id: response.razorpay_order_id,
+                        // order_id: response.razorpay_order_id,
                         signature: response.razorpay_signature,
                         order: userOrders
                     };
