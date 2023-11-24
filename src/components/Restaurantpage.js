@@ -52,7 +52,7 @@ const Restaurantpage = (props) => {
 
 
         var options = {
-            key: "rzp_test_RB0WElnRLezVJ5", // Enter the Key ID generated from the Dashboard
+            key: "rzp_test_RB0WElnRLezVJ5",
             amount: totalPrice * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             currency: "INR",
             name: "Zomato Clone ",
@@ -186,12 +186,10 @@ const Restaurantpage = (props) => {
 
                                                         </div>
 
-
                                                     )}
 
                                                 </div>
                                             </div>
-
 
                                         )
                                     })}
@@ -213,8 +211,6 @@ const Restaurantpage = (props) => {
                             </div>
                         </div>
                     </div>
-
-
 
                     <div className="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
                         tabindex="-1">
