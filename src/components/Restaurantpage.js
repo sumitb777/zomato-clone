@@ -58,7 +58,7 @@ const Restaurantpage = (props) => {
             name: "Zomato Clone ",
             description: "Make Payment to get orders",
             image: "https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png",
-            // order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             handler: async function (response) {
 
                 try {
