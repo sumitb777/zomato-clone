@@ -124,7 +124,7 @@ const Search = (props) => {
             <section className="row">
                 <Header bgColor="bg-danger" user={props.user} />
             </section>
-            <section className="row col-10 col-sm-12 ps-5  m-auto">
+            <section className="row col-12  col-sm-11 ps-md-5   ps-1   m-auto">
                 <section className="  ">
                     <h3 className=" fw-bolder fs-2 my-3   "> {meal_type_name} Places Near By</h3>
                 </section>
