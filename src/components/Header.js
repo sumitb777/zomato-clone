@@ -229,7 +229,7 @@ const Header = (props) => {
                 </div>
             </div>
 
-            <section className="col-10 m-auto d-flex justify-content-between align-items-center ">
+            <section className="col-md-10 col-12  m-auto d-flex justify-content-between align-items-center ">
                 <section className=" bg-white rounded-circle logo-h d-flex justify-content-center align-items-center "
                     onClick={() => Navigate('/')}>
                     {props.logo === false ? <p></p> : <p className=" text-danger px-3 pt-2 h3 fw-bold  ">e!</p>}
