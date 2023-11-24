@@ -264,7 +264,7 @@ const Restaurantpage = (props) => {
 
 
                     </section>
-                    <section className="col-10 mt-3 m-auto">
+                    <section className="col-md-10 col-11 mt-3 m-auto">
                         <section className="position-relative  ">
                             <img className="w-100 Restaurantpage-img h-50   "
                                 src={"/images/" + rstoDetails.image} alt=""

@@ -94,6 +94,10 @@ input[type=radio] {
         border-radius: 50%;
     }
 
+    .Restaurantpage-img {
+        height: 40vh !important;
+    }
+
     .lg {
         font-size: 50px !important;
     }
