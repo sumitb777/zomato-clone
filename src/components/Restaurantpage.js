@@ -246,7 +246,7 @@ const Restaurantpage = (props) => {
                                         Back
                                     </button>
 
-                                    <button className="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" onClick={makePayment}>Make Payment
+                                    <button className="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onClick={makePayment}>Make Payment
                                     </button>
 
 
