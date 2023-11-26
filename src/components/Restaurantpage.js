@@ -247,7 +247,7 @@ const Restaurantpage = (props) => {
                                     </button>
 
                                     <button className="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onClick={() => {
-                                        alert('orderd Sucessfully')
+                                        makePayment()
                                         window.location.assign('/')
                                     }}>Make order
                                     </button>
