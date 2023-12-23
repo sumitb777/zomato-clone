@@ -144,7 +144,7 @@ const Home = (props) => {
                             <p></p>
                         </div>
                     </section>
-                    {/* <!--                                               Man Section Rnd                           --> */}
+                    {/* <!--                                               Main Section Rnd                           --> */}
                 </section>
             </section>
             <section className="row ">

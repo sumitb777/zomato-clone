@@ -71,8 +71,7 @@ const Search = (props) => {
                             Number(value)
                         );
                         if (isIncluded === false) {
-                            filterData["cuisine"] = [
-                                ...filterData["cuisine"],
+                            filterData["cuisine"] = [...filterData["cuisine"],
                                 Number(value),
                             ];
                         }
