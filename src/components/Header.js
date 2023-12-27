@@ -228,6 +228,7 @@ const Header = (props) => {
                     </div>
                 </div>
             </div>
+           
 
             <section className="col-md-10 col-12  m-auto d-flex justify-content-between align-items-center ">
                 <section className=" bg-white rounded-circle logo-h d-flex justify-content-center align-items-center "
